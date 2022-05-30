@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postest 7</title>
+</head>
+
+<body id="badan">
+    <center>
+        <form name="fform">
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td colspan="2" id="bgheder">
+                        <h2 align="center">Biodata</h2>
+                    </td>
+                </tr>
+                <tr id="baris2">
+                    <td>
+                        <pre>
+<h3 align="center" >Inputnya sebelah sini</h3>
+Nama        : <input type="text" name="inama" onmouseover="document.getElementById('bgheder').style.backgroundColor = 'burlywood'">
+NIM         : <input type="text" name="inim" onmouseover="document.getElementById('bgheder').style.backgroundColor = 'peachpuff'">
+Fakultas    : <input type="text" name="ifak" onmouseover="document.getElementById('baris2').style.backgroundColor = 'peachpuff'">
+Prodi       : <input type="text" name="iprodi" onmouseover="document.getElementById('baris2').style.backgroundColor = 'lightblue'">
+Angkatan    : <input type="text" name="iang" onmouseover="document.getElementById('baris3').style.backgroundColor = 'lightblue'">
+                </pre>
+                    </td>
+                    <td>
+                        <pre>
+<h3 align="center">Outputnya sebelah sini</h3>
+Nama        : <input type="text" name="onama" readonly>
+NIM         : <input type="text" name="onim" readonly>
+Fakultas    : <input type="text" name="ofak" readonly>
+Prodi       : <input type="text" name="oprodi" readonly>
+Angkatan    : <input type="text" name="oang" readonly>
+</pre>
+                    </td>
+                </tr>
+                <tr id="baris3">
+                    <td colspan="2">
+                        <center>
+                            <input type="button" value="Cetak"
+                                onclick="lorem(); document.getElementById('badan').style.backgroundColor = 'lightblue'">
+                            <input type="reset" value="Ulang">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+    <script src="postest.js"></script>
+</body>
+
+</html>

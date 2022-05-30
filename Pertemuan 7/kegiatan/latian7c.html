@@ -1,28 +1,47 @@
-<html>
-<body>
-	<script language="JavaScript">
-		function warna(pilihan){
-			alert("Anda Memilih warna " + pilihan);
-			document.bgColor=pilihan;
-		}
-	</script>
+<HTML>
 
-	<h1 align="center">LATIHAN EVENT OnClick</h1>
-	<hr width="500" color="black" noshade=>
-	<h3 align="center">Pilih Warna Background favorit anda</h3>
-	<center>
-		<form>
-		<input type="button" value="Biru" onclick="warna ( 'lightblue') ">
-		<input type="button" value="Pink" onclick="warna ('pink') " >
-		<input type="button" value="Coklat" onclick="warna ('burlywood')" >
-		<input type="button" value="Kelabu" onclick="warna ('darkgray')" >
-		<input type="button" value="Orange" onclick="warna ('peachpuff')" >
-		<input type="button" value="Putih" onclick="warna ('white')">
-	</form>
-	<form>
-		<img name="coolfan" src="wr.jpeg" width="200" height="200"><br><br>
-		<input type="button" value="off" onclick="coolfan.src 'echa.jpeg'">
-	</form>
-	</center>
-	<hr width="500" color="black" noshade="">
-</body>
+	<head>
+		<style>
+			div {
+				width: 600px;
+				height: 400px;
+				border: solid;
+			}
+		</style>
+	</head>
+	
+	<BODY>
+		<SCRIPT LANGUAGE="JavaScript">
+			function warna(pilihan) {
+				alert("Anda Memilih Warna " + pilihan);
+				document.getElementById('kontener').style.backgroundColor = pilihan;
+			}
+		</SCRIPT>
+		<center>
+			<div id="kontener" name="bganyar">
+				<h1 align="center"> Latihan Event OnClick </h1>
+				<hr width="600" color="black" noshade>
+				<h3 align="center"> Pilih warna background favorit anda. </h3>
+				<CENTER>
+					<FORM>
+						<INPUT TYPE="button" VALUE="Biru" onClick="warna('lightblue')">
+						<INPUT TYPE="button" VALUE="Pink" onClick="warna('pink')">
+						<INPUT TYPE="button" VALUE="Coklat" onClick="warna('burlywood')">
+						<INPUT TYPE="button" VALUE="Kelabu" onClick="warna('darkgray')">
+						<INPUT TYPE="button" VALUE="Oranye" onClick="warna('peachpuff')">
+						<INPUT TYPE="button" VALUE="Putih" onClick="warna('white')">
+					</FORM>
+					<FORM>
+						<IMG NAME="coolfan" SRC="wr.jpeg" width=61 height=72>
+						<BR>
+						<BR>
+						<INPUT TYPE=BUTTON VALUE=" Off " onClick="coolfan.src ='wr.jpeg'">
+						<INPUT TYPE=BUTTON VALUE=" On " onClick="coolfan.src ='uad.png'">
+					</FORM>
+				</CENTER>
+				<hr width="400"   color="black" noshade>
+			</div>
+		</center>
+	</BODY>
+	
+	</HTML>
